@@ -1,14 +1,544 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>J.K. Rowling - Aayush Vyas</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="tabicon.ico" type="image/x-icon">
+    <link rel="icon" href="tabicon.ico" type="image/x-icon">
+
 </head>
 
-<body>
-    <h1>new post added</h1>
+<body id="top" writeit-autostart>
+
+    <!-- pageheader
+    ================================================== -->
+    <div class="s-pageheader">
+
+        <header class="header">
+            <div class="header__content row">
+
+                <div class="header__logo">
+                    <a class="logo" href="index.html">
+                        <!-- <img src="images/logo.svg" alt="Homepage"> -->
+                        <!-- <h1 writeit-animate writeit-replace-next="Developer !!" writeit-loop-reverse
+                            style="color:white; padding:1px; margin: 0px 0px 10px 0px">
+                            Aayush Vyas.
+                        </h1> -->
+                        <h1 writeit-animate writeit-start-delay='1' writeit-speed='6'
+                            writeit-replace-next="Aayush Vyas. ,Developer 💻, Entrepreneur  , Penman ✒️, Blogger"
+                            writeit-loop-reverse style="color:white; padding:1px; margin: 0px 0px 10px 0px">
+
+                        </h1>
+                    </a>
+                </div> <!-- end header__logo -->
+
+                <ul class="header__social">
+                    <li>
+                        <a href="https://www.facebook.com/theaayushvyas/"><i class="fa fa-facebook"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/theaayushvyas/"><i class="fa fa-twitter"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/theaayushvyas/"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.ca/theaayushvyas/"><i class="fa fa-pinterest"
+                                aria-hidden="true"></i></a>
+                    </li>
+                </ul> <!-- end header__social -->
+
+                <a class="header__search-trigger" href="#0"></a>
+
+                <div class="header__search">
+
+                    <form role="search" method="get" class="header__search-form" action="#">
+                        <label>
+                            <span class="hide-content">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s"
+                                title="Search for:" autocomplete="off">
+                        </label>
+                        <input type="submit" class="search-submit" value="Search">
+                    </form>
+
+                    <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
+
+                </div> <!-- end header__search -->
+
+
+                <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+                <nav class="header__nav-wrap">
+
+                    <h2 class="header__nav-heading h6">Site Navigation</h2>
+
+                    <ul class="header__nav">
+                        <li><a href="index.html" title="">Home</a></li>
+                        <!-- <li class="has-children">
+                            <a href="#0" title="">Categories</a>
+                            <ul class="sub-menu">
+                                <li><a href="category.html">Lifestyle</a></li>
+                                <li><a href="category.html">Health</a></li>
+                                <li><a href="category.html">Family</a></li>
+                                <li><a href="category.html">Management</a></li>
+                                <li><a href="category.html">Travel</a></li>
+                                <li><a href="category.html">Work</a></li>
+                            </ul>
+                        </li> -->
+                        <!-- <li class="has-children current">
+                            <a href="#0" title="">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="single-video.html">Video Post</a></li>
+                                <li><a href="single-audio.html">Audio Post</a></li>
+                                <li><a href="single-gallery.html">Gallery Post</a></li>
+                                <li><a href="single-standard.html">Standard Post</a></li>
+                            </ul>
+                        </li> -->
+                        <!-- <li><a href="style-guide.html" title="">Styles</a></li> -->
+                        <li><a href="about.html" title="">About</a></li>
+                        <li><a href="contact.html" title="">Contact</a></li>
+                    </ul> <!-- end header__nav -->
+
+                    <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+
+                </nav> <!-- end header__nav-wrap -->
+
+            </div> <!-- header-content -->
+        </header> <!-- header -->
+
+    </div> <!-- end s-pageheader -->
+
+
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content s-content--narrow s-content--no-padding-bottom">
+
+        <article class="row format-standard">
+
+            <div class="s-content__header col-full">
+                <h1 class="s-content__header-title">
+                    J.K. Rowling
+                </h1>
+                <ul class="s-content__header-meta">
+                    <li class="date">Posted on, July 17, 2020</li>
+                    <!-- <li class="cat">
+                        In
+                        <a
+                            href="https://www.google.com/search?q=entrepreneur&rlz=1C1CHBF_enIN879IN879&oq=entrepreneur&aqs=chrome..69i57j69i59j0l3j69i60l3.4487j1j7&sourceid=chrome&ie=UTF-8">Entrepreneur</a>
+                        <a href="#0">Travel</a>
+                    </li> -->
+                </ul>
+            </div> <!-- end s-content__header -->
+
+            <div class="s-content__media col-full">
+                <div class="s-content__post-thumb">
+                    <img src="images1/thumbs/single/standard/standard-JkRowling-1000.jpg" srcset="images1/thumbs/single/standard/standard-JkRowling-2000.jpg 2000w, 
+                                 images1/thumbs/single/standard/standard-JkRowling-1000.jpg 1000w, 
+                                 images1/thumbs/single/standard/standard-JkRowling-500.jpg 500w"
+                        sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                    <!-- <img src="images/thumbs/featured/kfc.jpg" sizes="(max-width: 2000px) 100vw, 2000px" alt=""> -->
+                </div>
+            </div> <!-- end s-content__media -->
+
+            <div class="col-full s-content__main">
+
+                <p class="lead">Colonel Harland Sanders is well known for his world famous fast food restaurant chain <a
+                        href="https://www.google.com/search?gs_ssp=eJzj4tDP1TewTDIrUWA0YHRg8BLLTs0rKU3OrlRIK8pMTVFIzshMBgoBAMwyC9I&q=kentucky+fried+chicken&rlz=1C1CHBF_enIN879IN879&oq=kent&aqs=chrome.1.69i57j46l2j0j46l3j69i60.2415j1j7&sourceid=chrome&ie=UTF-8">
+                        Kentucky Fried Chicken</a>, that
+                    specializes in fried chicken. The story of Colonel Sanders exemplifies his diligence, patience and
+                    wholehearted hard work for
+                    today's youth.
+
+                </p>
+
+                <p>Although his life was full of tragedies and difficulties, he succeeded at the age of 65. So success
+                    and age are mutually exclusive.
+                    This quote from <a
+                        href="https://www.google.com/search?q=mark+twain&rlz=1C1CHBF_enIN879IN879&oq=mark&aqs=chrome.0.69i59j46j69i57j0j46j0j69i60l2.2899j1j9&sourceid=chrome&ie=UTF-8">Mark
+                        Twain</a> fits Sanders perfectly.
+                <blockquote>
+                    <p>“AGE IS AN ISSUE OF MIND OVER MATTER. IF YOU DON’T MIND, IT DOESN’T MATTER.”</p>
+                </blockquote>
+
+                </p>
+
+                <!-- <p>
+                    <!-- <img src="images/wheel-1000.jpg"
+                        srcset="images/wheel-2000.jpg 2000w, images/wheel-1000.jpg 1000w, images/wheel-500.jpg 500w"
+                        sizes="(max-width: 2000px) 100vw, 2000px" alt=""> 
+                    <img src="images/thumbs/small/ColonelSanders.jpg" alt="">
+                </p> -->
+
+
+
+                <p>Colonel Harland David Sanders was an American businessman, born September 9, 1890 in on a little farm
+                    of
+                    <a href="https://goo.gl/maps/PZuNQg8LBAnc5PqeA">
+                        Henryville,
+                        Indiana, USA.</a>His father died tragically when he was only 6 years
+                    old. The situation at home then became such that the responsibility of his younger sister and
+                    younger brother fell on him at
+                    the young age of 7 years.
+                </p>
+
+
+
+                <p>At the age of 10, Sanders took his first job at a local farm. His mother remarried when Sanders was
+                    12
+                    years old.Sanders' stepfather did not like having any
+                    children around him, so his younger brother was sent to live with his aunt
+                    and Sanders was sent to work on a farm 80 miles away in<a
+                        href="https://goo.gl/maps/bYsAky44AvNjbFid8"> Greenwood,Indiana,USA.</a> The job paid fifteen
+                    dollars a month and provided him with a place to sleep and something to eat.Initially, Sanders
+                    balanced his work at the farm and school.He would get up before dawn, feed the animals, attend
+                    school through the day and then come back in the evening to feed
+                    the chicken and perform other odd jobs around the farm.
+                    Sanders realized that he would work all day
+                    on the farm instead of going to school, so he dropped out of 7th grade.
+                </p>
+
+
+                <p>
+                    For the next several years, Sanders did countless small and large jobs but failed each time.
+                    He also got married at the young age of 20 but then his wife left him.
+
+                </p>
+
+
+                <p>In 1929, Sanders moved to <a href="https://goo.gl/maps/MAHgS4gKBvrAX3V46">Corbin,Kentucky,USA</a>.
+                    where he opened a gas-station as well
+                    as a small
+                    restaurant next door
+                    where he made chicken for travelers. He tried to open another branches of his restaurant but he
+                    failed.</p>
+
+                <p>By the age of 65, he had done nothing more than to feed himself. He had a lot of positive influence
+                    from those who
+                    tasted the chicken. So he had full faith in his chicken recipe. He took spices and a Pressure Cooker
+                    and went out to
+                    market his unique method of making chicken. He visited every restaurant nearby and cooked his fried
+                    chicken on the spot
+                    for restaurant owners.
+                    Yet time did not accompany him. It was rejected 1,009 times before its chicken recipe was first
+                    approved.
+                </p>
+
+                <p>After that, he never looked back. The first KFC franchise opened in the United States in 1952. As of
+                    early 2020, there
+                    are KFC outlets in 150 countries and territories in the world.
+                    Today KFC's more than 23000 outlets worldwide.
+                    In 1976, the Sanders was ranked as the world’s second most recognizable celebrity.
+                </p>
+
+                <p>The gist of this post is for those who don't put much effort into it, and give up easily &
+                    effortlessly.
+                    Sanders should be ideal for such people.
+                    Don't let anyone and anything defeat you.
+                </p>
+                <blockquote>
+                    <p>“One has to remember that every failure can be a stepping stone to something better.” <br> --
+                        Colonel Sanders.</p>
+                </blockquote>
+                <p class="s-content__tags">
+                    <span>Post Tags</span>
+
+                    <span class="s-content__tag-list">
+                        <a
+                            href="https://www.google.com/search?q=entrepreneur&rlz=1C1CHBF_enIN879IN879&oq=entrepreneur&aqs=chrome..69i57j69i59j0l3j69i60l3.4487j1j7&sourceid=chrome&ie=UTF-8">Entrepreneur</a>
+                        <a href="#0">lectus</a>
+                        <a href="#0">varius</a>
+                        <a href="#0">turpis</a>
+                    </span>
+                </p> <!-- end s-content__tags -->
+
+                <div class="s-content__author">
+                    <img src="images/avatars/Av.jpeg" alt="">
+
+                    <div class="s-content__author-about">
+                        <h4 class="s-content__author-name">
+                            <a href="#0">Aayush Vyas</a>
+                        </h4>
+
+                        <p>He is a computer science student who is always eager to learn new things in mathematics,
+                            computer science &
+                            technology and entrepreneurship. He is also a blogger who loves to write about hustler.
+                            He is passionate about reading books.
+                        </p>
+
+                        <ul class="s-content__author-social">
+                            <li><a href="https://www.facebook.com/theaayushvyas/">Facebook</a></li>
+                            <li><a href="https://www.twitter.com/theaayushvyas/">Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/in/theaayushvyas/">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/theaayushvyas/">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="s-content__pagenav">
+                    <div class="s-content__nav">
+                        <!-- <div class="s-content__prev">
+                            <a href="#0" rel="prev">
+                                <span>Previous Post</span>
+                                Tips on Minimalist Design
+                            </a>
+                        </div> -->
+                        <div class="s-content__next" style="margin-bottom: 100px;">
+                            <a href="#0" rel="next">
+                                <span>Next Post</span>
+                                Story of the man who revolutionized of electronics industry.
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- end s-content__pagenav -->
+
+            </div> <!-- end s-content__main -->
+
+        </article>
+
+
+        <!-- comments
+        ================================================== -->
+
+
+    </section> <!-- s-content -->
+
+
+    <!-- s-extra
+    ================================================== -->
+    <section class="s-extra">
+
+        <div class="row top">
+
+            <div class="col-eight md-six tab-full popular">
+                <h3>Popular Posts</h3>
+
+                <div class="block-1-2 block-m-full popular__posts">
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="images/thumbs/small/SteveJobs.jpg" alt="">
+                        </a>
+                        <h5><a href="#0">Steve Jobs</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__author"><span>By</span> <a href="#0"> Aayush Vyas</a></span>
+                            <span class="popular__date"><span>on</span> <time datetime="2017-12-18">July 19,
+                                    2020</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="images/thumbs/featured/harrypotter.jpg" alt="">
+                        </a>
+                        <h5><a href="#0">J.K. Rowling</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__author"><span>By</span> <a href="#0"> Aayush Vyas</a></span>
+                            <span class="popular__date"><span>on</span> <time datetime="2017-12-16">July 17,
+                                    2020</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="images/thumbs/small/CristianoRonaldo.jpg" alt="">
+                        </a>
+                        <h5><a href="#0">Cristiano Ronaldo</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__author"><span>By</span> <a href="#0"> Aayush Vyas</a></span>
+                            <span class="popular__date"><span>on</span> <time datetime="2017-12-16">July 21,
+                                    2020</time></span>
+                        </section>
+                    </article>
+                    <article class="col-block popular__post">
+                        <a href="#0" class="popular__thumb">
+                            <img src="images/thumbs/small/WaltDisney.jpg" alt="">
+                        </a>
+                        <h5><a href="#0">Walt Disney</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__author"><span>By</span> <a href="#0"> Aayush Vyas</a></span>
+                            <span class="popular__date"><span>on</span> <time datetime="2017-12-16">July 23,
+                                    2020</time></span>
+                        </section>
+                    </article>
+                </div> <!-- end popular_posts -->
+            </div> <!-- end popular -->
+
+            <div class="col-four md-six tab-full about">
+                <h3>About this Blog</h3>
+
+                <p>
+                    In this blog, I will regularly post about people who have succeeded in their field such as sports,
+                    business, acting as
+                    well as many other fields. They have struggled a lot in their life, faced many difficulties and in
+                    the end they
+                    succeeded.
+                </p>
+                <p writeit-animate writeit-loop writeit-speed='6' writeit-start-delay='1' style="font-size: large;">
+                    Made with Love ❤️</p>
+
+                <ul class="about__social">
+                    <li>
+                        <a href="https://www.facebook.com/theaayushvyas/"><i class="fa fa-facebook"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/theaayushvyas/"><i class="fa fa-twitter"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/theaayushvyas/"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.ca/theaayushvyas/"><i class="fa fa-pinterest"
+                                aria-hidden="true"></i></a>
+                    </li>
+                </ul> <!-- end header__social -->
+            </div> <!-- end about -->
+
+        </div> <!-- end row -->
+
+
+
+    </section> <!-- end s-extra -->
+
+
+    <!-- s-footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="s-footer__main">
+            <div class="row">
+
+                <div class="col-two md-four mob-full s-footer__sitelinks">
+
+                    <h4>Quick Links</h4>
+
+                    <ul class="s-footer__linklist">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div> <!-- end s-footer__sitelinks -->
+
+                <!-- <div class="col-two md-four mob-full s-footer__archives">
+
+                    <h4>Archives</h4>
+
+                    <ul class="s-footer__linklist">
+                        <li><a href="#0">January 2018</a></li>
+                        <li><a href="#0">December 2017</a></li>
+                        <li><a href="#0">November 2017</a></li>
+                        <li><a href="#0">October 2017</a></li>
+                        <li><a href="#0">September 2017</a></li>
+                        <li><a href="#0">August 2017</a></li>
+                    </ul>
+
+                </div> end s-footer__archives -->
+
+                <div class="col-two md-four mob-full s-footer__social">
+
+                    <h4>Social</h4>
+
+                    <ul class="s-footer__linklist">
+                        <li><a href="https://www.facebook.com/theaayushvyas/">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/theaayushvyas/">Instagram</a></li>
+                        <li><a href="https://www.twitter.com/theaayushvyas/">Twitter</a></li>
+                        <li><a href="https://www.pinterest.ca/theaayushvyas/">Pinterest</a></li>
+                        <li><a href="https://www.linkedin.com/in/theaayushvyas/">LinkedIn</a></li>
+                    </ul>
+
+                </div> <!-- end s-footer__social -->
+
+                <!-- <div class="col-five md-full end s-footer__subscribe">
+
+                    <h4>Our Newsletter</h4>
+
+                    <p>Sit vel delectus amet officiis repudiandae est voluptatem. Tempora maxime provident nisi et fuga
+                        et enim exercitationem ipsam. Culpa consequatur occaecati.</p>
+
+                    <div class="subscribe-form">
+                        <form id="mc-form" class="group" novalidate="true">
+
+                            <input type="email" value="" name="EMAIL" class="email" id="mc-email"
+                                placeholder="Email Address" required="">
+
+                            <input type="submit" name="subscribe" value="Send">
+
+                            <label for="mc-email" class="subscribe-message"></label>
+
+                        </form>
+                    </div>
+
+                </div> end s-footer__subscribe -->
+
+            </div>
+        </div> <!-- end s-footer__main -->
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="col-full">
+                    <div class="s-footer__copyright">
+                        <span>© Copyright Philosophy 2018</span>
+                        <span>Site Template by <a href="https://colorlib.com/">Colorlib</a></span>
+                    </div>
+
+                    <div class="go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top"></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/WriteIt.js-master/WriteIt.min.js"></script>
 </body>
 
 </html>
