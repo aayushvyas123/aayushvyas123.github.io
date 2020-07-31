@@ -203,7 +203,7 @@
                             <textarea name="message_html" class="full-width" placeholder="Your Message"></textarea>
                         </div>
 
-                        <button class="submit btn btn--primary full-width" onclick="resetform()">Submit</button>
+                        <button class="submit btn btn--primary full-width">Submit</button>
 
                     </fieldset>
                 </form> <!-- end form -->
@@ -539,6 +539,7 @@
                 .then(function () {
                     alert("Sent!");
                     myform.find("button").text("Send");
+                    myform.reset();
                 }, function (err) {
                     alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
                     myform.find("button").text("Send");
@@ -546,9 +547,7 @@
             return false;
         });
 
-        function resetform() {
-            document.getElementById("myform").reset();
-        }
+
     </script>
 
 </body>
