@@ -235,35 +235,31 @@
 
                 <h3>Say Hello.</h3>
 
-                <form name="cForm" id="cform" method="post" action="">
+                <form id="myform" method="post">
                     <fieldset>
 
                         <div class="form-field">
-                            <input name="cName" type="text" id="cName" class="full-width" placeholder="Your Name"
-                                value="">
+                            <input name="from_name" type="text" class="full-width" placeholder="Your Name" value="">
                         </div>
 
                         <div class="form-field">
-                            <input name="cEmail" type="text" id="cEmail" class="full-width" placeholder="Your Email"
-                                value="">
+                            <input name="from_mail" type="text" class="full-width" placeholder="Your Email" value="">
                         </div>
 
-                        <!-- <div class="form-field">
-                            <input name="cWebsite" type="text" id="cWebsite" class="full-width" placeholder="Website"
-                                value="">
-                        </div> -->
+                        <div class="form-field">
+                            <input name="from_sub" type="text" class="full-width" placeholder="Subject" value="">
+                        </div>
 
                         <div class="message form-field">
-                            <textarea name="cMessage" id="cMessage" class="full-width"
-                                placeholder="Your Message"></textarea>
+                            <textarea name="message_html" class="full-width" placeholder="Your Message"></textarea>
                         </div>
 
-                        <button type="submit" name="Send" class="submit btn btn--primary full-width">Submit</button>
+                        <button class="submit btn btn--primary full-width">Submit</button>
 
                     </fieldset>
                 </form> <!-- end form -->
 
-
+                <!-- 
                 <form id="myform" method="post">
                     <label>from_name</label>
                     <input type="text" name="from_name" />
@@ -277,7 +273,7 @@
                     <button>
                         Send
                     </button>
-                </form>
+                </form> -->
 
             </div> <!-- end s-content__main -->
 
