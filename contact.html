@@ -188,11 +188,13 @@
                     <fieldset>
 
                         <div class="form-field">
-                            <input name="from_name" type="text" class="full-width" placeholder="Your Name" value="">
+                            <input name="from_name" type="text" class="full-width" placeholder="Your Name" required
+                                value="">
                         </div>
 
                         <div class="form-field">
-                            <input name="from_mail" type="text" class="full-width" placeholder="Your Email" value="">
+                            <input name="from_mail" type="text" class="full-width" placeholder="Your Email" required
+                                value="">
                         </div>
 
                         <div class="form-field">
@@ -539,7 +541,6 @@
                 .then(function () {
                     alert("Sent!");
                     myform.find("button").text("Send");
-                    myform.reset();
                 }, function (err) {
                     alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
                     myform.find("button").text("Send");
