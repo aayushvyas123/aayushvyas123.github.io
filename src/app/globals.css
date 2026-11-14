@@ -1,26 +1,120 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #050505;
+  --foreground: #ffffff;
+  --muted: #a1a1aa;
+
+  --aurora-cyan: #00f5ff;
+  --aurora-purple: #8b5cf6;
+  --aurora-green: #00ffa3;
+
+  --mx: 50vw;
+  --my: 50vh;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+
+  --color-aurora-cyan: var(--aurora-cyan);
+  --color-aurora-purple: var(--aurora-purple);
+  --color-aurora-green: var(--aurora-green);
+
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-jetbrains-mono);
+
+  --animate-aurora-drift-1: aurora-drift-1 34s ease-in-out infinite;
+  --animate-aurora-drift-2: aurora-drift-2 42s ease-in-out infinite;
+  --animate-aurora-drift-3: aurora-drift-3 38s ease-in-out infinite;
+  --animate-fade-up: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: color-mix(in oklab, var(--foreground) 10%, transparent);
+}
+
+html {
+  background: var(--background);
+  color-scheme: dark;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--aurora-purple) 40%, transparent);
+  color: #ffffff;
+}
+
+/* Slim, quiet scrollbar to match the minimal-luxury feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: color-mix(in oklab, var(--foreground) 14%, transparent);
+  border-radius: 999px;
+  border: 2px solid var(--background);
+}
+
+@keyframes aurora-drift-1 {
+  0%,
+  100% {
+    transform: translate(-8%, -6%) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translate(6%, 4%) rotate(8deg) scale(1.12);
+  }
+  66% {
+    transform: translate(-4%, 8%) rotate(-6deg) scale(0.96);
+  }
+}
+
+@keyframes aurora-drift-2 {
+  0%,
+  100% {
+    transform: translate(10%, 4%) rotate(0deg) scale(1.05);
+  }
+  50% {
+    transform: translate(-10%, -8%) rotate(-10deg) scale(0.92);
+  }
+}
+
+@keyframes aurora-drift-3 {
+  0%,
+  100% {
+    transform: translate(-6%, 10%) rotate(0deg) scale(0.98);
+  }
+  50% {
+    transform: translate(8%, -10%) rotate(10deg) scale(1.1);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
